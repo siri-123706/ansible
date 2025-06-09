@@ -7,12 +7,10 @@
     TRAINER: shivakummar
   tasks:
    - name: print course information
-     ansible.builtin.debug:
-      
+     ansible.builtin.debug:     
         msg: "hello {{COURSE}}, course duration: {{DURATION}}, trainer is {{TRAINER}}" 
 
 - name: print course information again
   ansible.builtin.debug:
-  # vars refernce should be surrounded by ""
-    msg: "hello {{COURSE}}, course duration: {{DURATION}}, trainer is {{TRAINER}}" 
+   msg: "hello {{COURSE}}, course duration: {{DURATION}}, trainer is {{TRAINER}}" 
 
