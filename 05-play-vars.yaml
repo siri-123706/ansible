@@ -8,7 +8,7 @@
   tasks:
    - name: print course information
      ansible.builtin.debug:
-     # vars refernce should be surrounded by ""
+      
         msg: "hello {{COURSE}}, course duration: {{DURATION}}, trainer is {{TRAINER}}" 
 
 - name: print course information again
